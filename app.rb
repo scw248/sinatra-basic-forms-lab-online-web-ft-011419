@@ -13,6 +13,7 @@ class App < Sinatra::Base
     @breed = params[:breed]
     @age = params[:age]
     @new_puppy = Puppy.new(@name, @breed, @age)
+    @result = @Puppy.piglatinize(user_phrase)
   end
   
   post "/puppy" do
